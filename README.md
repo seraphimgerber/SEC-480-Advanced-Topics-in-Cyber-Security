@@ -12,3 +12,7 @@
 ---
 
 # Modules
+
+### Module 1 - Bare Metal ESXI Setup
+
+[Milestone 1 - Bare Metal ESXI Setup](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-1-%E2%80%90-Bare-Metal-ESXI-Setup)

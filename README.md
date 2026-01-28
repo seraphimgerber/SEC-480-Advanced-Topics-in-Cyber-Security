@@ -13,6 +13,12 @@
 
 # Modules
 
-### Module 1 - Bare Metal ESXI Setup
+### Module 1 - Week 1 & 2
 
 [Milestone 1 - Bare Metal ESXI Setup](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-1-%E2%80%90-Bare-Metal-ESXI-Setup)
+
+### Module 2 - Week 3 & 4
+
+[Milestone 2.1 - AD](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-2.1-%E2%80%90-AD)
+
+[Milestone 2.2 - vCenter](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-2.2-%E2%80%90-vCenter)

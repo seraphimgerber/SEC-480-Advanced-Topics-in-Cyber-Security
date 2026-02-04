@@ -22,3 +22,7 @@
 [Milestone 2.1 - AD](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-2.1-%E2%80%90-AD)
 
 [Milestone 2.2 - vCenter](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-2.2-%E2%80%90-vCenter)
+
+[Milestone 3 - vCenter SSO]()
+
+[ Milestone 4 - PowerCLI and Linked Clones]()

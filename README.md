@@ -11,6 +11,8 @@
 
 ---
 
+[Network Assignments](https://docs.google.com/spreadsheets/d/1rl8BrMFa16staXtScZQOiQx9QQJQ-XNm-N5b4oof9lY/edit?gid=0#gid=0)
+
 # Modules
 
 ### Module 1 - Week 1 & 2

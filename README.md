@@ -27,4 +27,8 @@
 
 [Milestone 3 - vCenter SSO](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-3-%E2%80%90-vCenter-SSO)
 
-[ Milestone 4 - PowerCLI and Linked Clones](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-4-%E2%80%90-PowerCLI-and-Linked-Clones)
+[Milestone 4 - PowerCLI and Linked Clones](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-4-%E2%80%90-PowerCLI-and-Linked-Clones)
+
+### Module 3 - Week 5 & 6
+
+[Milestone 5 - 480 Utils](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-5-%E2%80%90-480%E2%80%90utils)

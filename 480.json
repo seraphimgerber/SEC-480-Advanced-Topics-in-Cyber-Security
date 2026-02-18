@@ -1,0 +1,8 @@
+{
+    "vcenter_server" : "vcenter.seraphim.local",
+    "vm_folder" : "basevm",
+    "esxi_host" : "192.168.3.210",
+    "default_network" : "480-WAN",
+    "default_datastore" : "datastore2-super10",
+    "default_snapshot" : "Base"
+}

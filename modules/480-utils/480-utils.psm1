@@ -117,3 +117,52 @@ function New-FullClone([string] $vmName, [string] $snapshotName, [string] $newNa
     New-NetworkAdapter -VM $newvm -NetworkName $network -StartConnected -Type Vmxnet3
     Write-Host -ForegroundColor Green "Full clone '$newName' created."
 }
+
+function New-Network([string] $esxi, [string] $switchName, [string] $portGroupName) {
+
+    do {
+        $vmhost = Get-VMHost -Name $esxi -ErrorAction SilentlyContinue
+        if (-not $vmhost) {
+            Write-Host -ForegroundColor Red "ESXi host '$esxi' not found. Try again."
+            $esxi = Read-Host "Enter ESXi host"
+        }
+    } while (-not $vmhost)
+
+    $vswitch = Get-VirtualSwitch -VMHost $vmhost -Name $switchName -ErrorAction SilentlyContinue
+    if (-not $vswitch) {
+        $vswitch = New-VirtualSwitch -VMHost $vmhost -Name $switchName
+        Write-Host -ForegroundColor Green "Virtual switch '$switchName' created."
+    } else {
+        Write-Host -ForegroundColor Yellow "Virtual switch '$switchName' already exists."
+    }
+
+    $pg = Get-VirtualPortGroup -VMHost $vmhost -Name $portGroupName -ErrorAction SilentlyContinue
+    if (-not $pg) {
+        New-VirtualPortGroup -VirtualSwitch $vswitch -Name $portGroupName | Out-Null
+        Write-Host -ForegroundColor Green "Port group '$portGroupName' created on '$switchName'."
+    } else {
+        Write-Host -ForegroundColor Yellow "Port group '$portGroupName' already exists."
+    }
+}
+
+function Get-IP([string] $vmName) {
+
+    do {
+        $vm = Get-VM -Name $vmName -ErrorAction SilentlyContinue
+        if (-not $vm) {
+            Write-Host -ForegroundColor Red "VM '$vmName' not found. Try again."
+            $vmName = Read-Host "Enter VM name"
+        }
+    } while (-not $vm)
+
+    $adapter = Get-NetworkAdapter -VM $vm | Select-Object -First 1
+    $ip = $vm.Guest.IPAddress[0]
+
+    if ($adapter) {
+        Write-Host -ForegroundColor Green "VM:  $($vm.Name)"
+        Write-Host -ForegroundColor Green "MAC: $($adapter.MacAddress)"
+        Write-Host -ForegroundColor Green "IP:  $ip"
+    } else {
+        Write-Host -ForegroundColor Red "No network adapter found on '$vmName'."
+    }
+}

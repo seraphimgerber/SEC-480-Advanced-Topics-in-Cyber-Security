@@ -1,8 +1,8 @@
 interfaces {
-    ethernet eth2 {
+    ethernet eth0 {
         address {{ wan_ip }}/24
     }
-    ethernet eth3 {
+    ethernet eth1 {
         address {{ lan_ip }}/24
     }
     loopback lo {
@@ -11,7 +11,7 @@ interfaces {
 nat {
     source {
         rule 10 {
-            outbound-interface eth2
+            outbound-interface eth0
             source {
                 address {{ lan }}
             }

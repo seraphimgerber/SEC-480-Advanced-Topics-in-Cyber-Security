@@ -15,11 +15,11 @@
 
 # Modules
 
-### Module 1 - Week 1 & 2
+### Module 1 - Milestone 1 & Intro Assignments
 
 [Milestone 1 - Bare Metal ESXI Setup](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-1-%E2%80%90-Bare-Metal-ESXI-Setup)
 
-### Module 2 - Week 3 & 4
+### Module 2 - Milestones 3 & 4
 
 [Milestone 2.1 - AD](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-2.1-%E2%80%90-AD)
 
@@ -29,10 +29,15 @@
 
 [Milestone 4 - PowerCLI and Linked Clones](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-4-%E2%80%90-PowerCLI-and-Linked-Clones)
 
-### Module 3 - Week 5 & 6
+### Module 3 - Milestones 5 & 6
 
 [Milestone 5 - 480 Utils](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-5-%E2%80%90-480%E2%80%90utils)
 
 [Milestone 6: Part 1 ‐ Blue Network and VyOS Provisioning](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-6-%E2%80%90-Blue-Network-and-vyos-Provisioning)
 
 [Milestone 6: Part 2 ‐ Vyos Provisioning with Ansible](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-6:-Part-2-%E2%80%90-Vyos-Provisioning-with-Ansible)
+
+### Module 4 - Milestone 7
+
+[Milestone 7 - Deploying and Post Provisioning of BlueX Linux Servers](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Milestone-7-%E2%80%90-Deploying-and-Post-Provisioning-of-BlueX-Linux-Servers)
+

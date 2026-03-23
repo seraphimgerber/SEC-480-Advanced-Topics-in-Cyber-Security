@@ -13,6 +13,8 @@
 
 [Network Assignments](https://docs.google.com/spreadsheets/d/1rl8BrMFa16staXtScZQOiQx9QQJQ-XNm-N5b4oof9lY/edit?gid=0#gid=0)
 
+[Extending ESXi Host Trial License](https://github.com/seraphimgerber/SEC-480-Advanced-Topics-in-Cyber-Security/wiki/Extending-ESXi-Host-Trial-License)
+
 # Modules
 
 ### Module 1 - Milestone 1 & Intro Assignments

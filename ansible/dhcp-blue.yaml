@@ -1,7 +1,7 @@
 - name: vyos blue10 net config
   hosts: vyos
   tasks:
-    - name: configure vyos dhcp
+  - name: configure vyos dhcp
     vyos_config:
       save: yes
       lines:

@@ -2,16 +2,19 @@ all:
   hosts:
     rocky1:
       ansible_host: 10.0.5.75
-      static_ip: 10.0.5.10
-      new_hostname: rocky1
+      hostname: rocky1
+      lan_ip: 10.0.5.10
     rocky2:
       ansible_host: 10.0.5.77
-      static_ip: 10.0.5.11
-      new_hostname: rocky2
+      hostname: rocky2
+      lan_ip: 10.0.5.11
     rocky3:
       ansible_host: 10.0.5.76
-      static_ip: 10.0.5.12
-      new_hostname: rocky3
+      hostname: rocky3
+      lan_ip: 10.0.5.12
   vars:
-    ansible_user: root
-    ansible_password: Ch@mpl@1n!25
+    ansible_user: champuser
+    gateway: 10.0.5.2
+    name_server: 10.0.5.5
+    device: ens192
+    public_key: ""

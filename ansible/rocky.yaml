@@ -1,5 +1,5 @@
 all:
-  hosts: all
+  hosts:
     rocky1:
       ansible_host: 10.0.5.75
       hostname: rocky1

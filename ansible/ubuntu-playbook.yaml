@@ -19,19 +19,6 @@
       dest: "/home/{{ ansible_user }}/.ssh/authorized_keys"
       block: "{{ public_key }}"
 
-  - name: Create sudoers drop in file
-    file:
-      path: /etc/sudoers.d/480
-      state: touch
-      mode: 0440
-    become: yes
-
-  - name: Create a dropin entry for /etc/sudoers.d/480
-    blockinfile:
-      dest: /etc/sudoers.d/480
-      block: "{{ ansible_user }} ALL=(ALL) NOPASSWD: ALL"
-    become: yes
-
   - name: Set the hostname
     hostname:
       name: "{{ hostname }}"
@@ -67,8 +54,8 @@
                 addresses:
                   - {{ name_server }}
                   - {{ gateway }}
-    mode: 0600
-    become: yes
+      mode: 0600
+      become: yes
 
   - name: Bounce the box
     shell: "sleep 5 && shutdown -r"

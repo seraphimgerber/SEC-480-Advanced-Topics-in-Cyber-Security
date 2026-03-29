@@ -13,9 +13,9 @@ all:
       hostname: rocky3
       lan_ip: 10.0.5.12
   vars:
-    ansible_user: root
+    ansible_user: champuser
     gateway: 10.0.5.2
     name_server: 10.0.5.5
-    device: ens192
+    device: ens34
     public_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCp13COEx+jLOnr5qs5Dc7MyQ7/PkSkl8FsqkYDZdPwEJhyDxPxm2nz30UsHYDCddi6NYN2CwaayoVQn3P76GoTexcdfheTsSH1LDiPPdZ3Fg3N9wImXT5HT7EW9N87el7QDZm+9Q0fdtdqCuGunbjk8eriwGi+1Vd7dwgTKPR+1NDfgh0f2GLsUrKjQ3FqsinoaVXb8XpoepexXzFcAHdEoZBXT7Ia14g5+W+rEZYG3A/ZcMlGgr8cKT3DBKg/NZOYrPoSBGRbQlZbLOgtwZX9Ak3ltTzuMxIIOy1KJjhW8u3J0oCOK9aQ6H3ORf8+I86Bov8TwlZ6WMRSI+8O6hnSM8+xCWgl/6rqM01G3hiKL2jbwko4O6lfW+C7mv1/+IEpQnTLbWtLuwuuc9zlOSAJxMYbnhJrhDgE9nMVz84DHOu6IKQJj79ApSadBs4RxizzwGXgaTnDroWyQKxjvELWytODm6zTaTc3J0/Dj5p7oawojyXJAifcM1vos3+rcWsYiVsz3FseMEfKW812StQoNgSNyvbm7VqL0D+QI8Zu9raiFRPVdNM64OSIaokLlK/wevA7xIvD8e49Cj10nQQiN7kthVT05gDjyXAFDQfDfM3CidzHvdaKVQ9CaSMMC6MympSn3AEfqz+eINDWXbC/4dO9SRUwmC1RFT+pgYUULw== xubuntu@xubuntu-wan"
 

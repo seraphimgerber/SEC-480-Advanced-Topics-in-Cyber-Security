@@ -244,8 +244,7 @@ function Set-WindowsIP([string] $vmName, [string] $ip, [string] $subnet, [string
     $securePass = Read-Host "Enter guest password for '$vmName'" -AsSecureString
     $plainPass = [System.Net.NetworkCredential]::new("", $securePass).Password
 
-    $script = "netsh interface ip set address name=`"Ethernet0`" static $ip $subnet $gateway`nnetsh interface ip set dns name=`"Ethernet0`" static $dns"
-
+   $script = "netsh interface ip set address name=`"Ethernet0 2`" static $ip $subnet $gateway`nnetsh interface ip set dns name=`"Ethernet0 2`" static $dns"
     Invoke-VMScript -VM $vm -ScriptText $script -GuestUser $guestUser -GuestPassword $plainPass -ScriptType Bat
     Write-Host -ForegroundColor Green "Static IP $ip set on '$vmName'."
 }

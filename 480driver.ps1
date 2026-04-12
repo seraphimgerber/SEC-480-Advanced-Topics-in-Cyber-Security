@@ -28,7 +28,7 @@ if ($action -eq 'C') {
     }
 
 } elseif ($action -eq 'I') {
-    $targetVM = Read-Host "Enter VM name [dc-blue1]"
+    $targetVM = Read-Host "Enter VM name"
     if ([string]::IsNullOrWhiteSpace($targetVM)) { $targetVM = "dc-blue1" }
 
     $ipAddr = Read-Host "IP Address [10.0.5.5]"

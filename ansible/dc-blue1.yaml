@@ -17,7 +17,7 @@
         state: present
 
     - name: Set hostname to dc-blue1
-      win_hostname:
+      ansible.windows.win_hostname:
         name: dc-blue1
       register: hostname_result
 
@@ -26,7 +26,7 @@
       when: hostname_result.reboot_required
 
     - name: Create new AD forest BLUE1.local
-      win_domain:
+      microsoft.ad.domain:
         dns_domain_name: BLUE1.local
         safe_mode_password: "{{ admin_password }}"
       register: domain_install

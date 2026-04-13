@@ -1,9 +1,0 @@
-all:
-  servers:
-    hosts:
-      dc-blue1:
-        ansible_host: 10.0.5.5
-        ansible_user: Administrator
-        ansible_connection: winrm
-        ansible_winrm_transport: ntlm
-        ansible_winrm_server_cert_validation: ignore

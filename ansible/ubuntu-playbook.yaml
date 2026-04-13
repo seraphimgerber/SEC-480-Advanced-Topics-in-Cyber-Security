@@ -20,9 +20,9 @@
       block: "{{ public_key }}"
 
   - name: Set the hostname
+    become: yes
     hostname:
       name: "{{ hostname }}"
-    become: yes
 
   - name: Add host to file
     lineinfile:
@@ -55,7 +55,7 @@
                   - {{ name_server }}
                   - {{ gateway }}
       mode: 0600
-      become: yes
+    become: yes
 
   - name: Bounce the box
     shell: "sleep 5 && shutdown -r"

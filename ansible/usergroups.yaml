@@ -21,9 +21,9 @@
 
     - name: Copy provisioning script to DC
       win_copy:
-        src: "{{ playbook_dir }}/provision_users.ps1"
-        dest: "C:\\ansible\\provision_users.ps1"
+        src: "{{ playbook_dir }}/users.ps1"
+        dest: "C:\\ansible\\users.ps1"
 
     - name: Run provisioning script
-      win_shell: "C:\\ansible\\provision_users.ps1"
-      register: provision_output
+      win_shell: "C:\\ansible\\users.ps1"
+      register: output

@@ -12,3 +12,9 @@ servers:
       ansible_password: "Ch@mpl@1n!25"
       ansible_connection: winrm
       ansible_port: 5985
+    win-wks:
+      ansible_host: 10.0.5.82
+      ansible_user: Administrator
+      ansible_password: "Ch@mpl@1n!25"
+      ansible_connection: winrm
+      ansible_port: 5985    
